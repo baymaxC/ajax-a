@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--
+form表单可以让用户输入一些信息，也可以提交这些信息
+所谓的提交指的是通过调用服务器的某个接口把数据传送给服务器
+action就表示调用的是哪个接口
+method表示提交数据的请求方法
+-->
+<!--
+服务器 提供一个接口 专门用于注册
+客户端提交 调用这个
+-->
+<body>
+    <h1>注册页面</h1>
+    <!--提交数据的位置-->
+    <form action="/regist" method="get">
+        <label for="username">用户名</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">密码</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <input type="submit" value="注册">
+    </form>
+</body>
+</html>
